@@ -12,8 +12,4 @@ import org.springframework.stereotype.Component;
 public class BrevoProperties {
     private String apiKey;
     private String apiUrl;
-
-    public String getApiKey() {
-        return apiKey;
-    }
 }

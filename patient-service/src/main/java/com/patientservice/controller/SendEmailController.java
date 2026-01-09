@@ -24,7 +24,7 @@ public class SendEmailController {
     @PostMapping()
     public ResponseEntity<SendEmailResponse> sendEmail(@RequestBody SendEmailRequest sendEmailRequest) {
         SendEmailResponse sendEmailResponse = emailServiceClient
-                .sendEmail( sendEmailRequest);
+                .sendEmail(sendEmailRequest);
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(sendEmailResponse);
     }
