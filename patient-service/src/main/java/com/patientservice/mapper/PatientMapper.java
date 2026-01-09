@@ -7,8 +7,8 @@ public class PatientMapper {
 
     public static PatientResponseDTO toDTO(Patient patient) {
 
-        return PatientResponseDTO.builder().
-                patientId(patient.getPatientId().toString())
+        return PatientResponseDTO.builder()
+                .patientId(patient.getPatientId().toString())
                 .patientName(patient.getPatientName())
                 .patientEmail(patient.getPatientEmail())
                 .dateOfBirth(patient.getDateOfBirth().toString())
